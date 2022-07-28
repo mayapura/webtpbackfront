@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../static/css/style.css">
+    <script src="https://kit.fontawesome.com/526ddec587.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app" class="app">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">
+                    <img src="./../static/img/vine-icon.svg" alt="logo" width="35" height="30" class="d-inline-block align-text-top"> V-Libros
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locales.html">Locales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="aboutus.html">Acerca de nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="login.html" class="btn btn-outline-success">Iniciar Sesión</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="col-12 mt-5 mb-3 text-center">
+                <h2 class="fw-bold">Contacto</h2>
+            </div>
+            <div class="row mb-5 p-5" style="background-color: rgba(197, 216, 216, 0.325)">
+                <div class="row col-12 m-auto" style="background-color: rgba(255, 255, 255, 0.882)">
+
+                    <div class="col-lg-6 col-sm-12 mb-2 mb-sm-0">
+                        <div class="mt-3 px-5 text-center">
+                            <h4 class="py-4">Formulario de contacto</h4>
+                            <p class="pb-4">¿No encontraste lo que buscás en Preguntas frecuentes? <br> Dejanos tu mensaje para que podamos contactarnos con vos. </p>
+                        </div>
+                        <form class="row px-5 text-start pb-4">
+                            <div class="col-lg-6 col-sm-12 mb-3">
+                                <label for="txtNombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="txtNombre" placeholder="Ingrese su nombre">
+                            </div>
+                            <div class="col-lg-6 col-sm-12 mb-3">
+                                <label for="txtApellido" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="txtApellido" placeholder="Ingrese su apellido">
+                            </div>
+                            <div class="col-lg-6 col-sm-12 mb-3">
+                                <label for="txtDni" class="form-label">DNI</label>
+                                <input type="number" class="form-control" id="txtDni" placeholder="Ingrese su DNI">
+                            </div>
+                            <div class="col-lg-6 col-sm-12 mb-3">
+                                <label for="txtEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="txtEmail" placeholder="Ingrese su e-mail">
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <label for="txtTelefono" class="form-label">Teléfono</label>
+                                <input type="number" class="form-control" id="txtTelefono" placeholder="Ingrese su teléfono">
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <label for="txtAsunto" class="form-label">Asunto</label>
+                                <input type="text" class="form-control" id="txtAsunto" placeholder="Ingrese su asunto">
+                            </div>
+                            <div class="mb-4">
+                                <label for="txtMensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="txtMensaje" rows="3" placeholder="Ingrese su mensaje"></textarea>
+                            </div>
+                            <div class="mb-3 col-12 d-grid gap-2">
+                                <button type="button" class="btn btn-success" onclick="enviarmje()">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row col-lg-1 col-sm-12 fondo p-0 m-0">
+                        <div class="col-12" style="background-color: rgba(197, 216, 216, 0.325)"></div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 py-lg-5 mx-auto my-lg-auto mt-sm-4">
+                        <div class="mt-3 mt-sm-0 pb-5 text-center">
+                            <h4 class="py-4">Otras formas de <br> contactarte con nosotros</h4>
+                            <h5 class="pb-4">Atención al cliente</h5>
+                            <p><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;<b>Email:</b>&nbsp;contactate@vlibros.com</p>
+                            <br>
+                            <h5 class="pb-4">Redes Sociales</h5>
+                            <i class="fa-brands fa-twitter-square fa-2x"></i>&nbsp;&nbsp;
+                            <i class="fa-brands fa-facebook-square fa-2x"></i>&nbsp;&nbsp;
+                            <i class="fa-brands fa-google-plus-square fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <footer class="row mx-0 px-0 " id="footer ">
+            <div class="col-sm-12 m-auto p-auto bg-dark ">
+                <h6 class="bg-dark text-white text-center py-4 ">Copyright &copy; 2022 Programaci&oacute;n FullStack con Java</h6>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js "></script>
+    <script src="./../static/js/create.js "></script>
+</body>
+
+</html>
